@@ -1,5 +1,5 @@
-import headerLogo from '../assets/images/header-logo.svg'
-import { hamburger } from '../assets/icons/hamburger.svg'
+import { headerLogo } from '../assets/images/'
+import { hamburger } from '../assets/icons/'
 import { navLinks } from '../constants/index'
 
 const Nav = () => {
@@ -26,6 +26,14 @@ const Nav = () => {
                         </li>
                     ))}
                 </ul>
+                <div className='hidden max-lg:block'>
+                    <img
+                        src={hamburger}
+                        alt="Hamburger"
+                        width={25}
+                        height={25}>
+                    </img>
+                </div>
             </nav>
         </header>
     )
